@@ -1,2 +1,2 @@
 $names = [string](Get-Content .\names.txt)
-$names.Split(",") | % {Write-Host "Hello" $_}
+$names.Split(",") | ForEach-Object {Write-Host "Hello" $_}
